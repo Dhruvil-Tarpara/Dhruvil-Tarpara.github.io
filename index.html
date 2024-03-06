@@ -39,7 +39,7 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
   <script>
-     if(document.referrer.includes("Instagram")){
+     if(navigator.userAgent.includes("Instagram")){
         var confirmation = confirm("You are accessing this site from Instagram. Would you like to continue to the GitHub Pages site?");
         if (confirmation) {
             window.location.href = "https://dhruvil-tarpara.github.io/";
