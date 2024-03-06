@@ -40,18 +40,11 @@
   <script src="flutter.js" defer></script>
   <script>
      if(navigator.userAgent.includes("Instagram")){
-        var confirmation = confirm("You are accessing this site from Instagram. Would you like to continue to the GitHub Pages site?");
+        var confirmation = confirm("You are accessing this site from Instagram. Would you like to continue to my site in Chrome?");
         if (confirmation) {
-            window.location.href = "https://dhruvil-tarpara.github.io/";
+            window.location.href = "googlechrome://navigate?url=https://dhruvil-tarpara.github.io/";
         } else {
-            // Provide a button to open the page in Chrome
-            document.body.innerHTML += "<p>Click the button below to open this page in Chrome.</p>";
-            var redirectButton = document.createElement("button");
-            redirectButton.textContent = "Open in Chrome";
-            redirectButton.onclick = function() {
-                window.location.href = "googlechrome://navigate?url=https://dhruvil-tarpara.github.io/";
-            };
-            document.body.appendChild(redirectButton);
+            alert("Thank you for your interest! You can manually open this page in Chrome if you'd like.");
         }
     }
   </script>
